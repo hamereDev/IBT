@@ -1,0 +1,6 @@
+Hamere,1500
+Meti,500
+Hamere,500
+Selam,1300
+Meti,200
+Selam,100
