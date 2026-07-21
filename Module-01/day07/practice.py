@@ -70,3 +70,32 @@ for customer in ['Almaz', 'Hamere', 'Kidist', 'Meti', 'Selam']:
 
 while queue:
     print('Served:', queue.popleft())
+    
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def push_front(self, data):
+        node = Node(data)
+        node.next = self.head
+        self.head = node
+
+    def print_all(self):
+        current = self.head
+        while current:
+            print(current.data)
+            current = current.next
+
+
+ll = LinkedList()
+ll.push_front('ACC-1003')
+ll.push_front('ACC-1002')
+ll.push_front('ACC-1001')
+
+ll.print_all()
