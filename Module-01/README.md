@@ -2,6 +2,12 @@
 
 This repository contains my practice exercises and projects from the IBT College Canada – CodeOps Full Stack Software Development Program.
 
+
+# Student Information
+Name: Hamere Gashaw
+Program: CodeOps Full Stack Software Development
+Repository: IBT
+
 ## Progress
 - Day 1: Terminal & Git basics
 - Day 2: Python fundamentals
@@ -25,4 +31,3 @@ Each folder contains the exercises, notes, and projects completed for that day.
 ## Goal
 To build strong skills in Python, clean code, object-oriented design, Git/GitHub, and software development best practices.
 
-Student: Hamere Gashaw
