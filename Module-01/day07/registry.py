@@ -25,3 +25,14 @@ class Account:
         self.balance -= amount
         self.history.append(('withdraw', amount))
         print(f'{self.owner} withdrew {amount} ETB')
+class AccountRegistry:
+    def __init__(self):
+        self.by_number = {}   # O(1) lookup
+        self.order = []
+
+    def add(self, acc):
+        self.by_number[acc.account_number] = acc
+        self.order.append(acc.account_number)
+
+    def find(self, number):
+        return self.by_number.get(number)
