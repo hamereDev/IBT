@@ -36,3 +36,10 @@ class AccountRegistry:
 
     def find(self, number):
         return self.by_number.get(number)
+    def list_all(self):
+        accounts = []
+
+        for number in self.order:
+            accounts.append(self.by_number[number])
+
+        return accounts
