@@ -1,22 +1,28 @@
-This repository contains my CodeOps exercises, assignments, and notes for the IBT College CodeOps program.
+# IBT CodeOps Portfolio
 
-## Module-01
+This repository contains my practice exercises and projects from the IBT College Canada – CodeOps Full Stack Software Development Program.
 
-- Day 01
-  - Terminal commands
-  - Git basics
-  - Repository setup
+## Progress
+- Day 1: Terminal & Git basics
+- Day 2: Python fundamentals
+- Day 3: Data structures, files, and exceptions
+- Day 4: Object-oriented programming (OOP)
+- Day 5: Inheritance and polymorphism
+- Day 6: SOLID principles and design patterns
+- Day 7: Linear Structures & Big-O 
 
-- Day 02
-  - Python practice exercises
-  - TeleBirr Tip Calculator
-  - Customer Report
--
-Day 03
-  - Python collections (sets, dictionaries, list comprehensions)
-  - File handling (read/write text files)
-  - Exception handling (try/except)
-  - Inventory Management System
-  - TeleBirr Customer Spending Report
+# Repository Structure
+Module-01/
+├── day01/
+├── day02/
+├── day03/
+├── day04/
+├── day05/
+└── day06/
 
-**Student:** Hamere Gashaw
+Each folder contains the exercises, notes, and projects completed for that day.
+
+## Goal
+To build strong skills in Python, clean code, object-oriented design, Git/GitHub, and software development best practices.
+
+Student: Hamere Gashaw
