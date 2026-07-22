@@ -50,7 +50,22 @@ class Account:
 
     def statement(self):
         print(f'{self.owner} ({self.account_number}) - Balance: {self.balance} ETB')
+# Binary search
+def binary_search(items, target):
+    left = 0
+    right = len(items) - 1
 
+    while left <= right:
+        mid = (left + right) // 2
+
+        if items[mid] == target:
+            return mid
+        elif items[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+
+    return -1
 
 class AccountRegistry:
     def __init__(self):
@@ -84,7 +99,14 @@ class AccountRegistry:
             reverse=True
         )
         return accounts[:n]
+    def find_by_number(self, number):
+        numbers = sorted(self.by_number.keys())
+        index = binary_search(numbers, number)
 
+        if index >= 0:
+            return self.by_number[numbers[index]]
+
+        return None
 
 # Demo / Test
 
