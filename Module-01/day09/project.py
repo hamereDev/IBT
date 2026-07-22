@@ -21,3 +21,13 @@ class Branch:
 
     def add_account(self, account):
         self.accounts.append(account)
+        def total_balance(self):
+            total = 0
+
+        for acc in self.accounts:
+            total += acc.balance
+
+        for child in self.children:
+            total += child.total_balance()
+
+        return total
