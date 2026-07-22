@@ -21,3 +21,27 @@ print('Total:', total(numbers))
 
 print('Countdown:')
 count_down(5)
+
+
+# 2. Binary search
+
+def binary_search(items, target):
+    left = 0
+    right = len(items) - 1
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if items[mid] == target:
+            return mid
+        elif items[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+
+    return -1
+
+
+# Test
+balances = [500, 1200, 2500, 3200, 4500, 6000]
+print('Binary search index:', binary_search(balances, 3200))
