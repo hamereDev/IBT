@@ -53,3 +53,38 @@ def height(node):
 
 
 print('\\nTree height:', height(root))
+
+
+# 3. Graph BFS
+
+from collections import deque
+
+
+def bfs(graph, start):
+    visited = set()
+    queue = deque([start])
+
+    while queue:
+        node = queue.popleft()
+
+        if node not in visited:
+            visited.add(node)
+
+            for neighbor in graph[node]:
+                if neighbor not in visited:
+                    queue.append(neighbor)
+
+    return visited
+
+
+graph = {
+    'A': ['B', 'C'],
+    'B': ['D', 'E'],
+    'C': ['F'],
+    'D': [],
+    'E': ['F'],
+    'F': []
+}
+
+print('\\nBFS reachable from A:')
+print(bfs(graph, 'A'))
